@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("dict_word", "for dict_word support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("dict_word", "enable dict_word support", "no");
+
+if (PHP_DICT_WORD != "no") {
+	EXTENSION("dict_word", "dict_word.c");
+}
+
